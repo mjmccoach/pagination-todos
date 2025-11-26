@@ -7,5 +7,6 @@ const getToDos = function (skip) {
     .then(data => () => {
             total = data.total;
             skip = skip + 20
+            todos = data.todos
         });
 }
